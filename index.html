@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud de filmes</title>
+
+    <style>
+          body, html {
+            height: 100%;
+            margin: 0;
+            position: relative;
+            background: linear-gradient(red,purple);
+        }
+        #container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centraliza */
+        }
+        a{
+            margin-top: 5px;
+        }
+        button{
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+     <div id = "container">
+        <h1>adicione um filme</h1>
+    <form method="POST" action="/">
+    <input type="text" name="title">
+    <input type="submit" value="adicionar">
+    </form>
+    <a href="/listar_filmes"><button>ver lista</button></a>
+     </div>
+    
+
+      
+</body>
+</html>
